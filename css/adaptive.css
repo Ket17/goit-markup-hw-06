@@ -1,0 +1,48 @@
+.section-three {
+    display: none;
+}
+
+
+.section-four-team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
+}
+
+.list-our-team {
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.castomers-ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 72px 16px;
+}
+
+
+
+.costomers-list {
+    width: calc((100% - 16px) / 2);
+}
+
+
+
+
+.footer-logo-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
+    margin-right: 0;
+}
+
+.footer-social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
+}

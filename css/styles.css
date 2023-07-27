@@ -378,6 +378,7 @@ ul {
 }
 
 .section-two-headlines {
+    text-align: center;
     font-size: 36px;
     font-weight: 600;
     line-height: 1.2;
@@ -531,16 +532,14 @@ ul {
 
 .castomers-ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 72px;
-    /* display: flex;
-    gap: 24px;
-    margin: 0; */
+    flex-wrap: wrap;
+    gap: 72px 16px;
 }
 
 .costomers-list {
-    height: 88px;
+    width: calc((100% - 16px) / 2);
 }
 
 .customers-icon-a {
@@ -613,7 +612,7 @@ ul {
 }
 
 .footer-social {
-    align-items: flex-start;
+    text-align: center;
     margin-bottom: 16px;
     color: #FFFFFF;
     font-size: 16px;
@@ -663,12 +662,11 @@ ul {
 .footer-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 
 .footer-form-subscribe {
-    align-items: flex-start;
+    text-align: center;
     color: #ffffff;
     margin-bottom: 16px;
     font-size: 16px;
@@ -719,7 +717,7 @@ ul {
 
 .button-form-footer:hover,
 .button-form-footer:focus {
-    background-color: #404BBF;
+    background-color: #31d0aa;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -939,14 +937,15 @@ ul {
 /*--portfolio--*/
 
 .section-port-one {
-    padding-top: 96px;
-    padding-bottom: 120px;
+    padding: 48px 0;
+    /* padding-top: 96px;
+    padding-bottom: 120px; */
 }
 
 .portfolio-nav-buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
-    justify-content: center;
     margin-bottom: 72px;
 }
 
@@ -983,10 +982,16 @@ ul {
 
 .portfolio-nav-img {
     display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: flex-start;
+    /* display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
-    row-gap: 48px;
+    row-gap: 48px; */
 }
+
+
 
 .portfolio-a-card {
     display: block;
@@ -1003,6 +1008,23 @@ ul {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+
+.portfolio-card-title {
+    color: #2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.portfolio-p {
+    color: #434455;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
 }
 
 .portfolio-box {
@@ -1029,7 +1051,7 @@ ul {
 }
 
 .portfolio-list-img {
-    width: calc((100% - 48px) / 3);
+    /* width: calc((100% - 48px) /3); */
 }
 
 .portfolio-list-explain {
@@ -1178,337 +1200,4 @@ ul {
 
 .menu-container.is-open {
     transform: translateX(0);
-}
-
-
-/*--adaptive-mobile--*/
-
-@media screen and (min-width: 428px) {
-
-
-    .logo {
-        padding: 24px 0;
-        margin-right: 249px;
-    }
-
-    .menu {
-        display: none;
-    }
-
-
-
-    .section-one-headline {
-        margin-bottom: 72px;
-        max-width: 320px;
-        text-align: center;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 40px;
-        letter-spacing: 0.72px;
-        text-transform: capitalize;
-    }
-
-
-    .section-two-ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-
-    .section-two-headlines {
-        text-align: center;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 40px;
-        letter-spacing: 0.72px;
-        text-transform: capitalize;
-    }
-
-    .section-two-p {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.32px;
-    }
-
-    .costomers-list {
-        width: calc((100% - 16px) / 2);
-    }
-
-    .castomers-ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 72px 16px;
-    }
-
-    .footer-logo-p {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-right: 0;
-    }
-
-    .footer-social-media {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .form-footer {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-div {
-        display: flex;
-        flex-direction: column;
-        gap: 72px;
-    }
-
-    .footer-email {
-        width: 398px;
-    }
-}
-
-
-
-
-@media screen and (min-width: 768px) {
-
-    .container {
-        max-width: 768px;
-    }
-
-    .logo {
-        margin-right: 120px;
-    }
-
-    .menu {
-        display: flex;
-        gap: 40px;
-    }
-
-    .page-contact {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        justify-content: center;
-    }
-
-    .information {
-        padding: 0;
-    }
-
-    .hamberger-button {
-        display: none;
-    }
-
-    .section-one-headline {
-        margin-bottom: 48px;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 496px;
-        width: 496px;
-        text-align: center;
-        font-size: 56px;
-        font-weight: 700;
-        line-height: 1.07;
-        letter-spacing: 0.02em;
-    }
-
-    .section-two-headlines {
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 40px;
-        letter-spacing: 0.72px;
-        text-transform: capitalize;
-    }
-
-    .section-two-ul {
-        display: flex;
-        flex-direction: row;
-        gap: 72px 24px;
-        flex-wrap: wrap;
-    }
-
-    .section-two-li {
-        width: 48%;
-    }
-
-    .section-four-team-list {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        gap: 64px 24px;
-        align-items: center;
-    }
-
-    .castomers-ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 72px 24px;
-    }
-
-    .costomers-list {
-        width: calc((100% - 24px) / 4);
-    }
-
-    .footer-div {
-        width: 582px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 72px 24px;
-    }
-
-    .footer-logo {
-        align-items: flex-start;
-    }
-
-    .form-footer {
-        display: flex;
-        flex-direction: row;
-    }
-
-
-    .footer-email {
-        width: 264px;
-        margin-right: 24px;
-    }
-
-    .button-form-footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-
-@media screen and (min-width: 1158px) {
-    .container {
-        max-width: 1158px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .logo {
-        margin-right: 76px;
-    }
-
-    .menu {
-        display: flex;
-        gap: 40px;
-    }
-
-    .page-contact {
-        display: flex;
-        flex-direction: row;
-        padding: 24px 0;
-        gap: 40px;
-    }
-
-    .hamberger-button {
-        display: none;
-    }
-
-    .section-one {
-        margin: 0 auto;
-        max-width: 1440px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        padding-top: 188px;
-        padding-bottom: 188px;
-    }
-
-    .section-one-headline {
-        text-align: center;
-        font-size: 56px;
-        font-weight: 700;
-        line-height: 60px;
-        letter-spacing: 1.12px;
-    }
-
-    .section-two {
-        padding: 120px 0;
-    }
-
-    .section-two-icons-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 264px;
-        height: 112px;
-        border-radius: 4px;
-        margin-bottom: 8px;
-    }
-
-
-    .section-two-icons {
-        display: flex;
-        gap: 24px;
-    }
-
-    .section-two-svg {
-        width: 64px;
-        height: 64px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .section-two-headlines {
-        margin-bottom: 8px;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-    }
-
-    .section-two-ul {
-        display: flex;
-        flex-direction: row;
-        gap: 24px;
-    }
-
-    .section-two-li {
-        width: calc((100% - 72px) / 4);
-    }
-
-    .section-two-p {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-    }
-
-    .section-three {
-        display: flex;
-    }
-
-    .section-four {
-        padding: 120px 0;
-    }
-
-
-    .customers {
-        padding: 120px 0;
-    }
-
-    .castomers-ul {
-        display: flex;
-        gap: 24px;
-        margin: 0;
-    }
-
-    .costomers-list {
-        height: 88px;
-        width: calc((100% - 24px) / 7);
-    }
 }

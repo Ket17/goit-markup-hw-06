@@ -10,6 +10,7 @@
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/adaptive.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студія</title>
@@ -44,6 +45,14 @@
                     </li>
                 </ul>
             </address>
+            <div class="hamberger-button">
+                <button type="button" class="menu-toggle-header js-open-menu" aria-expanded="false"
+                    aria-controls="mobile-menu">
+                    <svg class="header-hamberger" width="32px" height="22px">
+                        <use href="./images/icons.svg#icon-menu-hamburger"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </header>
     <main>
@@ -136,7 +145,7 @@
         <section class="section-four">
             <div class="container-four container">
                 <h2 class="section-three-headline">Our Team</h2>
-                <ul class="section-four-ul list">
+                <ul class="section-four-team-list list">
                     <li class="list-our-team">
                         <img src="./images/markguerrero.jpg" alt="Mark Guerrero" width="264" />
                         <div class="about-worker">
@@ -301,14 +310,14 @@
                     <li class="costomers-list list">
                         <a href="" class="customers-icon-a link">
                             <svg class="customers-icon" width="104" height="56">
-                                <use href="./images/icons.svg#icon-foster"></use>
+                                <use href="./images/icons.svg#icon-peters"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="costomers-list list">
                         <a href="" class="customers-icon-a link">
                             <svg class="customers-icon" width="104" height="56">
-                                <use href="./images/icons.svg#icon-peters"></use>
+                                <use href="./images/icons.svg#icon-logo-brand"></use>
                             </svg>
                         </a>
                     </li>
@@ -433,6 +442,56 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="header-hamberger" width="8px" height="8px">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu-list list">
+            <li>
+                <a href="./index.html" class="mobile-navigation link">Studio</a>
+            </li>
+            <li>
+                <a href="./portfolio.html" class="mobile-navigation link">Portfolio</a>
+            </li>
+            <li><a href="" class="mobile-navigation link">Contacts</a></li>
+        </ul>
+        <ul class="list">
+            <li>
+                <a href="tel:+110001111111" class="mobile-tel link">+11 (000) 111-11-11</a>
+            </li>
+            <li>
+                <a href="mailto:info@devstudio.com" class="mobile-mail link">info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="mobile-social-list list">
+            <li class="mobile-list-icons">
+                <a href="" class="mobile-icons link"><svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg></a>
+            </li>
+            <li class="mobile-list-icons">
+                <a href="" class="mobile-icons link"><svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-twittersvg"></use>
+                    </svg></a>
+            </li>
+            <li class="mobile-list-icons">
+                <a href="" class="mobile-icons link"><svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg></a>
+            </li>
+            <li class="mobile-list-icons">
+                <a href="" class="mobile-icons link"><svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg></a>
+            </li>
+        </ul>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
